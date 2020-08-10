@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cell1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="playGame"
+            android:tag="cell1"
+            android:textAlignment="center"
+            android:textSize="34dp"
+            app:backgroundTint="#E91E63"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cell2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="playGame"
+            android:tag="cell2"
+            android:textAlignment="center"
+            android:textSize="34dp"
+            app:backgroundTint="#E91E63" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cell3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="playGame"
+            android:tag="cell3"
+            android:textAlignment="center"
+            android:textSize="34dp"
+            app:backgroundTint="#E91E63" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cell4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="playGame"
+            android:tag="cell4"
+            android:textAlignment="center"
+            android:textSize="34dp"
+            app:backgroundTint="#E91E63" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cell5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="playGame"
+            android:tag="cell5"
+            android:textAlignment="center"
+            android:textSize="34dp"
+            app:backgroundTint="#E91E63" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cell6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="playGame"
+            android:tag="cell6"
+            android:textAlignment="center"
+            android:textSize="34dp"
+            app:backgroundTint="#E91E63" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="300dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cell7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="playGame"
+            android:tag="cell7"
+            android:textAlignment="center"
+            android:textSize="34dp"
+            app:backgroundTint="#E91E63" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cell8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="playGame"
+            android:tag="cell8"
+            android:textAlignment="center"
+            android:textSize="34dp"
+            app:backgroundTint="#E91E63" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cell9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="playGame"
+            android:tag="cell9"
+            android:textAlignment="center"
+            android:textSize="34dp"
+            app:backgroundTint="#E91E63" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/playersBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:text="\? vs ?"
+        android:textSize="32dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
