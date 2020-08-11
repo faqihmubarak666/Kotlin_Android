@@ -27,5 +27,4 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         intent.putExtra(FISRT_PLAYER_TWO, input_playerTwo.text.toString())
         startActivity(intent)
     }
-
 }
