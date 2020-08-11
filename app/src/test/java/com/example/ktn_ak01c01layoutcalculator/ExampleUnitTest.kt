@@ -1,4 +1,4 @@
-package com.example.ktn_ak01c01tictactoegame
+package com.example.ktn_ak01c01layoutcalculator
 
 import org.junit.Test
 

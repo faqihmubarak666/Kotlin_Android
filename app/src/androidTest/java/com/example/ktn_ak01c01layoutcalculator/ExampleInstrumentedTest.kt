@@ -1,4 +1,4 @@
-package com.example.ktn_ak01c01tictactoegame
+package com.example.ktn_ak01c01layoutcalculator
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
