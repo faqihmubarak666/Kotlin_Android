@@ -33,26 +33,33 @@ class MainActivity : AppCompatActivity() {
         percentCalc.setOnClickListener { appendOnExpression("%", true) }
 
         clearCalc.setOnClickListener {
-            tvExpression.text = ""
-            tvResult.text = ""
+            inputExpression.text = ""
+            resultExpression.text = ""
+        }
+
+        percentCalc.setOnClickListener {
+            val inputNumber = inputExpression.text.toString()
+            val result = inputNumber.toDouble() / 100
+            resultExpression.text = result.toString()
         }
 
         delCalc.setOnClickListener {
-            val string = tvExpression.text.toString()
-            if (string.isNotEmpty()) {
-                tvExpression.text = string.substring(0, string.length - 1)
+            val pressButton = inputExpression.text.toString()
+            if (pressButton.isNotEmpty()) {
+                inputExpression.text = pressButton.substring(0, pressButton.length - 1)
             }
-            tvResult.text = ""
+            resultExpression.text = ""
         }
+
         equalCacl.setOnClickListener {
             try {
-                val expression = ExpressionBuilder(tvExpression.text.toString()).build()
-                val result = expression.evaluate()
+                val inputNumber = ExpressionBuilder(inputExpression.text.toString()).build()
+                val result = inputNumber.evaluate()
                 val longResult = result.toLong()
                 if (result == longResult.toDouble()) {
-                    tvResult.text = longResult.toString()
+                    resultExpression.text = longResult.toString()
                 } else {
-                    tvResult.text = result.toString()
+                    resultExpression.text = result.toString()
                 }
             } catch (e: Exception) {
                 Log.d("Exception", "message" + e.message)
@@ -60,18 +67,18 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun appendOnExpression(string: String, canClear: Boolean) {
+    fun appendOnExpression(inputCalc: String, canClear: Boolean) {
 
-        if (tvResult.text.isNotEmpty()) {
-            tvExpression.text = ""
+        if (resultExpression.text.isNotEmpty()) {
+            inputExpression.text = ""
         }
         if (canClear) {
-            tvResult.text = ""
-            tvExpression.append(string)
+            resultExpression.text = ""
+            inputExpression.append(inputCalc)
         } else {
-            tvExpression.append(tvResult.text)
-            tvExpression.append(string)
-            tvResult.text = ""
+            inputExpression.append(resultExpression.text)
+            inputExpression.append(inputCalc)
+            resultExpression.text = ""
         }
     }
 }

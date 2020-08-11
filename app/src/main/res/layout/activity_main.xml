@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/tvExpression"
+            android:id="@+id/inputExpression"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="start"
@@ -34,7 +34,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tvResult"
+            android:id="@+id/resultExpression"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
@@ -67,19 +67,19 @@
             android:text="DEL"
             android:textAlignment="center"
             android:textSize="34dp"
-            app:backgroundTint="#CFC2C7" />
+            app:backgroundTint="#03A9F4" />
 
         <Button
             android:id="@+id/equalCacl"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:layout_weight="1"
             android:tag="="
             android:text="="
             android:textAlignment="center"
             android:textSize="34dp"
-            app:backgroundTint="#CFC2C7" />
+            app:backgroundTint="#FF9800" />
 
     </LinearLayout>
 
@@ -109,7 +109,7 @@
                 android:id="@+id/twoCalc"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:tag="2"
                 android:text="2"
@@ -121,7 +121,7 @@
                 android:id="@+id/threeCalc"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:tag="3"
                 android:text="3"
@@ -133,13 +133,13 @@
                 android:id="@+id/divisionCalc"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:tag="/"
                 android:text="/"
                 android:textAlignment="center"
                 android:textSize="34dp"
-                app:backgroundTint="#CFC2C7" />
+                app:backgroundTint="#FF9800" />
 
         </LinearLayout>
 
@@ -168,7 +168,7 @@
                 android:id="@+id/fiveCalc"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:tag="5"
                 android:text="5"
@@ -180,7 +180,7 @@
                 android:id="@+id/sixCalc"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:tag="6"
                 android:text="6"
@@ -192,13 +192,13 @@
                 android:id="@+id/subtractionCalc"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:tag="-"
                 android:text="-"
                 android:textAlignment="center"
                 android:textSize="34dp"
-                app:backgroundTint="#CFC2C7" />
+                app:backgroundTint="#FF9800" />
 
         </LinearLayout>
 
@@ -227,7 +227,7 @@
                 android:id="@+id/eightCalc"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:tag="8"
                 android:text="8"
@@ -239,7 +239,7 @@
                 android:id="@+id/nineCalc"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:tag="9"
                 android:text="9"
@@ -251,13 +251,13 @@
                 android:id="@+id/multiplyCalc"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:tag="x"
                 android:text="x"
                 android:textAlignment="center"
-                android:textSize="34dp"
-                app:backgroundTint="#CFC2C7" />
+                android:textSize="30dp"
+                app:backgroundTint="#FF9800" />
         </LinearLayout>
 
         <LinearLayout
@@ -276,17 +276,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:tag="CE"
-                android:text="CE"
+                android:tag="AC"
+                android:text="AC"
                 android:textAlignment="center"
                 android:textSize="34dp"
-                app:backgroundTint="#CFC2C7" />
+                app:backgroundTint="#03A9F4" />
 
             <Button
                 android:id="@+id/zeroCalc"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:tag="0"
                 android:text="0"
@@ -298,25 +298,25 @@
                 android:id="@+id/percentCalc"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:tag="%"
                 android:text="%"
                 android:textAlignment="center"
                 android:textSize="34dp"
-                app:backgroundTint="#CFC2C7" />
+                app:backgroundTint="#FF9800" />
 
             <Button
                 android:id="@+id/additionCalc"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:tag="+"
                 android:text="+"
                 android:textAlignment="center"
                 android:textSize="34dp"
-                app:backgroundTint="#CFC2C7" />
+                app:backgroundTint="#FF9800" />
         </LinearLayout>
     </LinearLayout>
 
